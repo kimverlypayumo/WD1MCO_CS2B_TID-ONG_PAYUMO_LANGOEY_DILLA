@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zootopia | Official Movie Fan Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="rsc/css/style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">🐾 ZOOTOPIA</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li><a class="nav-link" href="index.html#cinema">Cinema</a></li>
+                <li><a class="nav-link active" href="characters.html">Characters</a></li>
+                <li><a class="nav-link" href="products.html">Products</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="character-banner">
+    <img src="media/characters/zootopia.jpg"
+         alt="Zootopia characters"
+         class="character-banner-image">
+
+    <div class="character-banner-overlay">
+        <h1>MEET THE CHARACTERS</h1>
+        <p>Discover the faces and personalities of Zootopia.</p>
+    </div>
+</header>
+
+<main class="container py-5">
+
+    <div class="section-title">
+        <p>THE MAIN CHARACTERS</p>
+        <h2>Protagonists</h2>
+    </div>
+
+    <div class="character-slider">
+
+        <button class="slider-btn prev" onclick="slideCharacters('protagonistTrack', -1)">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+
+        <div class="row g-4 character-slider-track" id="protagonistTrack">
+
+        <div class="col-md-6 character-slide">
+            <div class="character-card">
+                <img src="media/characters/Judy-Hopps.png" alt="Judy-Hopps">
+                <div>
+                    <h3>Judy Hopps</h3>
+                    <span class="badge bg-primary">Protagonist</span>
+                    <p>
+                        Judy Hopps is an optimistic rabbit who dreams
+                        of becoming a police officer. She becomes the
+                        first bunny police officer in Zootopia.
+                        Despite facing discrimination and doubt,
+                        she remains determined to prove her abilities.
+                        Her courage helps her solve the city's mystery.
+                    </p>
+                    <b>Voice Actor: Ginnifer Goodwin</b>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 character-slide">
+            <div class="character-card">
+                <img src="media/characters/Nick-Wilde.png" alt="Nick-Wilde">
+                <div>
+                    <h3>Nick Wilde</h3>
+                    <span class="badge bg-primary">Protagonist</span>
+                    <p>
+                        Nick Wilde is a clever fox known for his
+                        sarcastic personality and street smarts.
+                        He initially works as a small-time con artist.
+                        He later becomes Judy's partner in investigating
+                        the missing mammals case. Through their journey,
+                        Nick learns to trust others.
+                    </p>
+                    <b>Voice Actor: Jason Bateman</b>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 character-slide">
+            <div class="character-card">
+                <img src="media/characters/Chief-Bogo.png" alt="Chief-Bogo">
+                <div>
+                    <h3>Chief Bogo</h3>
+                    <span class="badge bg-secondary">Supporting</span>
+                    <p>
+                        Chief Bogo is the head of the Zootopia Police
+                        Department. He is strict, serious, and initially
+                        doubts Judy's abilities. He eventually recognizes
+                        the importance of her investigation.
+                    </p>
+                    <b>Voice Actor: Idris Elba</b>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 character-slide">
+            <div class="character-card">
+                <img src="media/characters/Gazelle.png" alt="Gazelle">
+                <div>
+                    <h3>Gazelle</h3>
+                    <span class="badge bg-secondary">Supporting</span>
+                    <p>
+                        Gazelle is a famous pop star in Zootopia.
+                        She uses her popularity to promote peace,
+                        equality, and understanding among the
+                        different animal communities.
+                    </p>
+                    <b>Voice Actor: Shakira</b>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+        <button class="slider-btn next" onclick="slideCharacters('protagonistTrack', 1)">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+
+    </div>
+
+    <div class="section-title mt-5">
+        <p>THE OTHER SIDE OF THE STORY</p>
+        <h2>Antagonists</h2>
+    </div>
+
+    <div class="character-slider">
+
+        <button class="slider-btn prev" onclick="slideCharacters('villainTrack', -1)">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+
+        <div class="row g-4 character-slider-track" id="villainTrack">
+
+        <div class="col-md-6 character-slide">
+            <div class="character-card villain">
+                <img src="media/characters/Bellwether.png" alt="Bellwether">
+                <div>
+                    <h3>Assistant Mayor Bellwether</h3>
+                    <span class="badge bg-danger">Main Antagonist</span>
+                    <p>
+                        Bellwether is the assistant mayor of Zootopia.
+                        She appears shy and harmless, but secretly
+                        creates conflict between predators and prey.
+                        Her actions are at the center of the mystery.
+                    </p>
+                    <b>Voice Actor: Jenny Slate</b>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 character-slide">
+            <div class="character-card villain">
+                <img src="media/characters/Lionheart.png" alt="Lionheart">
+                <div>
+                    <h3>Mayor Lionheart</h3>
+                    <span class="badge bg-danger">Antagonist</span>
+                    <p>
+                        Lionheart is the powerful leader of
+                        Zootopia. He makes secret decisions during
+                        the missing-mammals crisis because he wants
+                        to protect his position and reputation.
+                    </p>
+                    <b>Voice Actor: J.K. Simmons</b>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 character-slide">
+            <div class="character-card villain">
+                <img src="media/characters/Duke-Weaselton.png" alt="Duke-Weaselton">
+                <div>
+                    <h3>Duke Weaselton</h3>
+                    <span class="badge bg-danger">Minor Antagonist</span>
+                    <p>
+                        Duke is a small-time criminal involved in
+                        selling bootleg DVDs. His activities connect
+                        him to Judy's investigation and create
+                        complications for the heroes.
+                    </p>
+                    <b>Voice Actor: Alan Tudyk</b>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+        <button class="slider-btn next" onclick="slideCharacters('villainTrack', 1)">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+
+    <!-- WEBSITE LOGO -->
+    <div class="footer-brand">
+        <img src="media/img/zootopia-logo.jpg"
+             alt="Zootopia Logo">
+
+        <h3>ZOOTOPIA</h3>
+    </div>
+
+    <!-- DESCRIPTION -->
+    <p>
+        A city where anyone can be anything.
+        Discover the characters, stories, and products
+        of the amazing world of Zootopia.
+    </p>
+
+    <!-- SOCIAL MEDIA -->
+    <div class="social-links">
+
+        <a href="https://www.facebook.com/"
+           target="_blank" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+        </a>
+
+        <a href="https://www.instagram.com/"
+           target="_blank" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="https://www.youtube.com/"
+           target="_blank" aria-label="YouTube">
+            <i class="bi bi-youtube"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/"
+           target="_blank" aria-label="TikTok">
+            <i class="bi bi-tiktok"></i>
+        </a>
+
+    </div>
+
+</div>
+            <div class="col-md-4"><h5>Developed By</h5><p>Express JS</p><p>Express JS</p>
+                <p>Dilla, Stephanie</p>
+                <p>Langoey, Ryza</p>
+                <p>Payumo, Kimverly</p>
+                <p>Tid-ong, Mejorie</p>
+            </div>
+            <div class="col-md-4"><h5>Quick Links</h5><a href="index.html">Home</a><a href="characters.html">Characters</a><a href="products.html">Products</a></div>
+        </div>
+        <hr>
+        <p class="text-center">© 2026 Zootopia Student Website</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="rsc/js/character.js"></script>
+
+</body>
+</html>
